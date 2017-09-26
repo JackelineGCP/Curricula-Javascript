@@ -1,0 +1,99 @@
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/GESSENIA/javascipt/.git/
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git remote v-
+error: Unknown subcommand: v-
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--m                                     irror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)..                                     .]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        nombre.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git remote add origin https://github.com/JackelineGCP/Curricula-Javascript.git                                     fatal: remote origin already exists.
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git remote -v
+origin  https://github.com/JackelineGCP/Curricula-Javascript.git (fetch)
+origin  https://github.com/JackelineGCP/Curricula-Javascript.git (push)
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git add .
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   nombre.txt
+
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git commit -m 'primer commit'
+[master (root-commit) 00c7fdb] primer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 nombre.txt
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+
+
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git commit -m 'primer commit'
+On branch master
+nothing to commit, working tree clean
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 239 bytes | 239.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/JackelineGCP/Curricula-Javascript.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+GESSENIA@DESKTOP-BA7FAV0 MINGW64 ~/javascipt (master)
+$
